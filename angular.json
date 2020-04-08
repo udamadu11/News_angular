@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "NewsApi"
+    }
+  },
+  "defaultProject": "NewsApi",
+  "cli": {
+    "analytics": "e8e32715-0deb-40a5-8741-610bf0724569"
+  }
 }
