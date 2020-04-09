@@ -6,9 +6,12 @@
       <div class="col align-self-center">
         <div *ngFor="let article of articles">
             <div class="card text-center" style="width: 18rem;">
+              <img src="{{article.urlToImage}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <div class="card-header">{{article.title}}</div>
-                  <p class="card-text"> {{article.description}}</p>
+                    <h5 class="card-title">{{article.title}}</h5>
+                    <span><p style="font-weight: bold;">Author : {{article.author}}</p></span>
+                    <span><small><p>Publish At : {{article.publishedAt}}</p></small></span>
+                  <p class="card-text">{{article.description}}</p>
                   <a href="{{article.url}}" class="btn btn-primary">Read Article</a>
                 </div>
               </div><br>

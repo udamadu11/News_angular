@@ -10,7 +10,7 @@ export class ApiService {
   private apiKey = 'e69ccc2a5fd348f78df8722bbda96ae4';
   constructor(private api: HttpClient) { }
 
-  getNews():Observable<NewsComponent[]>{
-    return this.api.get<NewsComponent[]>(`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${this.apiKey}`);
+  getNews():Observable<NewsComponent>{
+    return this.api.get<NewsComponent>(`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${this.apiKey}`);
   }
 }
