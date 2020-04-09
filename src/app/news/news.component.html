@@ -1,8 +1,11 @@
-<div *ngFor="let article of articles">
-    <h2>{{article.title}}</h2>
-    
-    <p>
-        {{article.description}}
-    </p>
-    <a href="{{article.url}}">Read Article</a>
+<div class="container" style="margin-top: 100px;">
+    <div *ngFor="let article of articles">
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <div class="card-header">{{article.title}}</div>
+              <p class="card-text"> {{article.description}}</p>
+              <a href="{{article.url}}" class="btn btn-primary">Read Article</a>
+            </div>
+          </div><br>
+    </div>
 </div>
